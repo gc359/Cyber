@@ -21,3 +21,7 @@ for ping in range(1,10):
 This code iterates over all the available IP addresses, ping them and check for the reply. If the echo is received, that means the host is connected and in case, no echo is received, then it looks like that the host is down.
 Note: Personal firewalls or general firewalls are often set to so called “stealth mode” which is used not to react to ICMP echo requests.
 '''
+
+'''
+Sources: https://www.geeksforgeeks.org/network-scanner-in-python/
+'''
