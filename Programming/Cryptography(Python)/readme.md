@@ -1,0 +1,1 @@
+Sources: https://nitratine.net/blog/post/encryption-and-decryption-in-python/
