@@ -22,18 +22,17 @@ function cipher_break($text, $shift) {
       $result += $shifted_char
 
     # If the character is a lowercase letter
-    elseif ($char -cmatch '[a-z]') {
+    } elseif ($char -cmatch '[a-z]') {
       # Shift the character back by the given amount and wrap around if necessary
       $shifted_code = (([int]$char - 97 - $shift + 26) % 26 + 97)
       $shifted_char = [char]$shifted_code
       $result += $shifted_char
 
     # If the character is not a letter, leave it as is
-    else {
+    } else {
       $result += $char
     }
   }
-
   # Return the decrypted message
   return $result
 }
